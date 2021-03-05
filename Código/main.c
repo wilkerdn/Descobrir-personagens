@@ -76,14 +76,14 @@ void Carregar_Personagens(Pers *Personagem){
 }
 
 void comeco(){
-	 printf("---BEM-VINDO AO JOGO---\n");
+    printf("---BEM-VINDO AO JOGO---\n");
     printf("\nSuas opcoes de escolha sao: Lionel Messi, Cristiano Ronaldo, Papai Smurf, Homer Simpson, Marta, Kratos, Bebe Rexha, Axl Rose, Vin Diesel e Emilia Clark\n");
     printf("\nVamos comecar! Responda as perguntas com sim ou nao\n");
     jogar();
 }
 
 int jogar(){
-	Pers Personagem[NUM_PERSONAGENS];
+    Pers Personagem[NUM_PERSONAGENS];
     Perg Pergunta[NUM_PERGUNTAS];
     char *resposta;
     char positivo[]={"sim"};
@@ -198,7 +198,7 @@ int jogar(){
                             if(jogardnv==1){
                         	comeco();
                             }else
-                            return 0;
+                            	return 0;
                             }else
                         printf("Que pena, nao foi possivel encontrar sua figura\n");
                         printf("Deseja jogar novamente? sim = 1/nao = 0\n");
